@@ -1,14 +1,36 @@
-body {
+.full-box {
+  position: relative;
+  height: 100vh;
+  background-color: aqua;
+}
+#quote-box {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+}
+#text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+#author {
+  font-size: 1em;
+  margin-top: 10px;
+}
+/* ================= */
+.button {
+  position: relative;
+  margin-top: 20px;
+}
+#new-quote {
+  position: absolute;
+  right: 0;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
